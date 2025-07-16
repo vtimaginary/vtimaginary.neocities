@@ -1,9 +1,84 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  margin-left: 15vw;
+  display: flex; 
+  height: 100vh; 
+}
+
+
+
+.sidebar a {
+  display: block;           
+  padding-top: .5rem;    
+  padding-bottom: 4rem;       
+  padding-left: .5rem;   
+  padding-right: .5rem;  
+  text-decoration: none;    
+  color: #fff;              
+  font-family: 'Neutral Face', sans-serif;
+  background-color: #454545;
+  margin: 0.25rem 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block; 
+}
+.sidebar a:hover {
+  background-color: #555;      
+  transform: scale(1.05);      
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 15vw;
+  background-color: #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-top: 2rem;
+  overflow: visible;
+  z-index: 1000; 
+  box-sizing: border-box;
+  min-width: 100px; 
+  max-width: 200px; 
+  
+}
+
+.svg-container svg,
+.svg-container img {
+
+  max-width: 100%;      
+  max-height: 50vh; 
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vh;
+}
+ 
+
+@font-face {
+    font-family: 'Neutral Face';
+    src: url('/fonts/NeutralFaceRegular.woff2') format('woff2'),
+        url('NeutralFaceRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutral Face';
+    src: url('fonts/NeutralFaceBold.woff2') format('woff2'),
+        url('NeutralFaceBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+main {
+  margin-left: 15vw;
+  padding: 1rem;
 }
